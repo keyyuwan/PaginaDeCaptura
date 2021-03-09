@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+.container {
+  max-width: 1000px;
+  margin: auto;
+}
+
+header {
+  background-color: #48c5ce;
+  text-align: center;
+  color: white;
+  padding: 10px;
+}
+
+.title {
+  font-size: 26px;
+}
+
+section {
+  padding: 20px;
+  background-image: url(/paginaDeCaptura/images/people.jpg);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.formContainer {
+  max-width: 230px; /* limitou o conteúdo */
+  background-color: #ffffffbb;
+  padding: 20px;
+  float: right;
+}
+
+h2 {
+  font-size: 16px;
+}
+
+.mb {
+  margin-bottom: 15px;
+}
+
+input,
+select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  border: none;
+  margin-bottom: 10px;
+  outline: none; /* eu add */
+}
+
+select {
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+  background-image: url(/paginaDeCaptura/images/arrow.jpg);
+  background-repeat: no-repeat;
+  background-position: calc(100% - 10px) center;
+}
+
+input[type="submit"] {
+  color: white;
+  background-color: #48c5ce;
+  font-weight: bold;
+
+  cursor: pointer; /* eu add */
+  transition: 200ms; /* eu add */
+}
+
+/* eu add */
+input[type="submit"]:hover {
+  background-color: #31a6aebb;
+}
+
+footer {
+  background-color: #202121;
+  padding: 40px;
+  text-align: center;
+}
+
+.picture {
+  width: 160px;
+}
+
+.description {
+  display: inline-block;
+  text-align: left;
+  color: white;
+  max-width: 40%;
+  margin-left: 40px;
+}
+
+.description h3 {
+  font-size: 24px;
+}
+
+.description h3,
+.description p {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  .formContainer {
+    float: none;
+    max-width: 100%;
+  }
+
+  .description {
+    max-width: 50%;
+  }
+}
